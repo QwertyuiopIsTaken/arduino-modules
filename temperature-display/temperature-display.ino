@@ -14,7 +14,7 @@ const int D1 = 12;
 const int D2 = 9;
 const int D3 = 8;
 const int D4 = 6;
-const int D = A5;
+const int DP = A5;
 
 const int DHTpin = 3;
 DHT dht(DHTpin, DHTTYPE);
@@ -34,7 +34,7 @@ void setup() {
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
-  pinMode(D, OUTPUT);
+  pinMode(DP, OUTPUT);
 }
 
 void loop() {
@@ -48,7 +48,7 @@ void loop() {
   digitalWrite(D2, HIGH);
   digitalWrite(D3, HIGH);
   digitalWrite(D4, HIGH);
-  digitalWrite(D, LOW);
+  digitalWrite(DP, LOW);
   displayDigit(tenDigit);
   delay(1);
   
@@ -56,7 +56,7 @@ void loop() {
   digitalWrite(D2, LOW);
   digitalWrite(D3, HIGH);
   digitalWrite(D4, HIGH);
-  digitalWrite(D, HIGH);
+  digitalWrite(DP, HIGH);
   displayDigit(oneDigit);
   delay(1);
 
@@ -64,7 +64,7 @@ void loop() {
   digitalWrite(D2, HIGH);
   digitalWrite(D3, LOW);
   digitalWrite(D4, HIGH);
-  digitalWrite(D, LOW);
+  digitalWrite(DP, LOW);
   displayDigit(tenthDigit);
   delay(1);
 
@@ -72,7 +72,7 @@ void loop() {
   digitalWrite(D2, HIGH);
   digitalWrite(D3, HIGH);
   digitalWrite(D4, LOW);
-  digitalWrite(D, LOW);
+  digitalWrite(DP, LOW);
   displayDigit(hundredthDigit);
   delay(1);
 }
