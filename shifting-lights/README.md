@@ -1,4 +1,4 @@
-# Blinking lights
+# Shifting lights
 
 ## Components needed
 * Jumper wires
